@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Configuración básica del documento HTML -->
+    <meta charset="utf-8" /> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width" /> <!-- Para que la web se vea bien en móviles -->
+    <title>Portfolio de Antonio Damián - Técnico de instalaciones eléctricas y automatizadas</title> <!-- Título que aparece en la pestaña del navegador -->
+
+    <!-- Descripción para buscadores como Google -->
+    <meta name="description" content="Portfolio de Antonio Damián, con un total de 780 horas de experiencia como electricista y en mantenimiento industrial" />
+
+    <!-- Datos que aparecen al compartir la web en redes sociales -->
+    <meta property="og:title" content="Portfolio de Antonio Damián - Técnico de electricidad" />
+    <meta property="og:description" content="Portfolio de Antonio Damián, con un total de 780 horas de experiencia como electricista y en mantenimiento industrial" />
+    <meta property="og:image" content="imagen/aaaaaa.PNG" /> <!-- Imagen que aparece en redes -->
+    <meta property="og:image:alt" content="Fotografía de Antonio Damián" /> <!-- Texto alternativo para la imagen -->
+
+    <!-- Información para SEO y navegadores -->
+    <link rel="alternate" href="https://toni.dam/en" hreflang="es" /> <!-- Enlace alternativo en otro idioma -->
+    <link rel="canonical" href="https://toni.dam" /> <!-- URL preferida para evitar contenido duplicado -->
+    <meta name="robots" content="index,follow" /> <!-- Permite que Google indexe y siga los enlaces de la página -->
+    <meta name="theme-color" content="#09f" /> <!-- Color de la pestaña en navegadores móviles -->
+    
+    <!-- Icono que aparece en la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="imagen/aaaaaa.PNG" />
+    
+    <!-- Archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <!-- Encabezado principal con el título del sitio y el menú de navegación -->
+    <header>
+      <h1>Portfolio de Antonio</h1> <!-- Título grande de la web -->
+      <nav> <!-- Menú de navegación -->
+        <a href="#Preguntas-frecuentes">Preguntas frecuentes</a>
+        <a href="#Tareas Realizadas">Tareas Realizadas</a>
+      </nav>
+    </header>
+    
+    <!-- Sección con la experiencia laboral -->
+    <section class="box">
+      <h2 id="experiencia">Experiencia</h2>
+      <ul>
+        <li><strong>Ayuntamiento de Utiel</strong> (03/2022 - 05/2022)</li>
+        <li><strong>Huevos Guillén </strong>(03/2024 - 06/2024)</li>
+      </ul>
+    </section>
+
+    <!-- Sección que muestra el total de horas trabajadas -->
+    <section class="box">
+      <h2>Horas realizadas</h2>
+      <p>
+        <li>+240h de <strong>electricista</strong> en el <strong>Ayuntamiento de Utiel.<br /></strong></li>
+        <li>+540h de <strong>mantenimiento industrial</strong> en 
+        <a href="https://www.huevosguillen.com/" target="_blank">Huevos Guillén</a>.</li>
+      </p>
+    </section>
+
+    <!-- Imagen personal de Antonio -->
+    <img
+      title="Foto de Antonio"
+      alt="Una imagen de Antonio Damián formato DNI de su currículum"
+      src="imagen/aaaaaa.PNG"
+      width="250"
+      height="250"
+    />
+
+    <!-- Sección que describe en detalle las tareas realizadas en cada empresa -->
+    <section class="box">
+      <h2 id="Tareas Realizadas">Tareas realizadas</h2>
+
+      <!-- Detalles del trabajo en el Ayuntamiento de Utiel -->
+      <aside>
+        <header>
+          <h3>Ayuntamiento de Utiel</h3>
+        </header>
+        <ol>
+          <li>Instalación, reparación y mantenimiento de componentes de iluminación.</li>
+          <li>Mantenimiento preventivo y correctivo en instalaciones eléctricas.</li>
+          <li>Manejo de herramientas para verificar continuidad y voltaje.</li>
+          <li>Revisión del cableado y mejora de distribución y aislamiento.</li>
+          <li>Trabajos en altura y plataformas elevadoras con normas de seguridad.</li>
+          <li>Gestión de suministros para ejecución de proyectos eléctricos.</li>
+        </ol>
+      </aside>
+
+      <!-- Detalles del trabajo en Huevos Guillén -->
+      <aside>
+        <header>
+          <h3>Huevos Guillén</h3>
+        </header>
+        <ol>
+          <li>Mantenimiento y reparación de maquinaria industrial automatizada.</li>
+          <li>Control de sistemas eléctricos y sensores de producción.</li>
+          <li>Supervisión de cintas transportadoras y cuadros eléctricos.</li>
+          <li>Resolución de averías con tiempos de respuesta rápidos.</li>
+          <li>Colaboración con el equipo técnico para tareas de mejora continua.</li>
+          <li>Aplicación de protocolos de seguridad e higiene industrial.</li>
+        </ol>
+      </aside>
+    </section>
+
+    <!-- Preguntas comunes con respuestas que se pueden abrir o cerrar -->
+    <section class="box">
+      <h2 id="Preguntas-frecuentes">Preguntas frecuentes</h2>
+
+      <details>
+        <summary>¿Qué estudios tienes?</summary>
+        <p>Estudié en el Instituto Miguel Ballesteros Viana un grado medio de Equipos eléctricos y automáticos</p>
+      </details>
+
+      <details>
+        <summary>¿Cuáles son tus aptitudes?</summary>
+        <p>Soy empático y honesto, con capacidad de trabajar en equipo y muchas ganas de aprender</p>
+      </details>
+
+      <details>
+        <summary>¿Tienes algún curso especial?</summary>
+        <p>Aparte de mis conocimientos en el campo eléctrico, tengo un curso de socorrista y conozco técnicas de primeros auxilios</p>
+      </details>
+    </section>
+
+    <!-- Formulario de contacto (simulado sin servidor) -->
+    <section class="box" id="formulario">
+      <h2>Formulario de contacto</h2>
+      <!-- El formulario se envía a un fragmento de la misma página (#gracias) -->
+      <form method="get" action="#gracias">
+        <fieldset>
+          <legend>Información personal</legend> <!-- Título del grupo de campos -->
+
+          <!-- Campo de nombre -->
+          <div>
+            <label>Nombre:
+              <input type="text" name="name" placeholder="Antonio Damián" required>
+            </label>
+          </div>
+
+          <!-- Campo de correo electrónico -->
+          <label>Email:
+            <input type="email" name="email" placeholder="todamramani@gmail.com" required>
+          </label>
+        </fieldset>
+
+        <!-- Botón para enviar el formulario -->
+        <input type="submit" value="Enviar contacto">
+      </form>
+
+      <!-- Mensaje que aparece cuando se "envía" el formulario (simulado) -->
+      <div id="gracias" class="mensaje-exito">
+        <p>¡Mensaje enviado correctamente! Me pondré en contacto contigo lo antes posible.</p>
+        <a href="#formulario">Cerrar mensaje</a>
+    </section>
+
+    <!-- Pie de página con derechos de autor y enlaces -->
+    <footer>
+      Copyright © 2025 - El mejor portfolio
+      <a href="mailto:todamramani@gmail.com">Envíame un correo</a> |
+      <a href="https://github.com/Toniirmzz" target="_blank" rel="noopener">Mi GitHub</a>
+    </footer>
+  </body>
+</html>

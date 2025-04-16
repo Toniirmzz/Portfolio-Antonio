@@ -1,0 +1,149 @@
+/* Estilo general para todo el contenido del cuerpo de la página */
+body {
+  background: #f5f9fc; /* Color del fondo */
+  font-family: 'Montserrat', sans-serif; /* Fuente del texto */
+  margin: 20px; /* Espacio alrededor de todo el contenido */
+  line-height: 1.7; /* Espaciado entre líneas de texto */
+  color: #333; /* Color para el texto  */
+}
+
+/* Estilo para el título principal (h1) */
+h1 {
+  color: #0a3d62; /* Color*/
+  font-size: 2.2rem; /* Tamaño */
+  margin-bottom: 10px; /* Espacio debajo del título */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+/* Recuadros blancos para separar secciones */
+.box {
+  background-color: #fff; /* Fondo blanco */
+  padding: 20px; /* Espacio interior del recuadro */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-top: 30px; /* Separación desde arriba */
+  border: 1px solid #ddd; /* Color del borde  */
+}
+
+/* Títulos dentro de los recuadros .box */
+.box h2 {
+  display: flex; /* Alineación horizontal del icono y el texto */
+  align-items: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Icono decorativo delante de cada título h2 dentro de .box */
+.box h2::before {
+  content: '🔹'; /* Icono que aparece antes del texto */
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Mensaje de éxito (cuando se envía el formulario correctamente) */
+.mensaje-exito {
+  display: none; /* Oculto por defecto */
+  color: green; /* Texto verde */
+  font-weight: bold; /* Texto en negrita */
+  margin-top: 1em; /* Separación hacia arriba */
+  background-color: #e6ffe6; /* Fondo verde clarito */
+  border: 1px solid #00cc00; /* Borde verde */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Hace que el mensaje de éxito se muestre cuando se accede a #gracias */
+#gracias:target {
+  display: block;
+}
+
+/* Estilo de los bloques desplegables (<details>) */
+details {
+  margin-bottom: 15px; /* Espacio inferior entre bloques */
+  padding: 10px; /* Espaciado interno */
+  background-color: #f7f7f7; /* Fondo gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave al abrir/cerrar */
+}
+
+/* Cuando el detalle está abierto cambia el color de fondo */
+details[open] {
+  background-color: #e4f0f5; /* Azul muy suave */
+}
+
+/* Estilo para el resumen (texto visible antes de hacer clic en <details>) */
+summary {
+  font-weight: bold;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  font-size: 1.1rem;
+  color: #0077cc; /* Azul llamativo */
+}
+
+/* Cambia el color cuando se pasa el cursor */
+summary:hover {
+  color: #005fa3; /* Azul un poco más oscuro */
+}
+
+/* Estilo general del formulario */
+form {
+  display: flex;
+  flex-direction: column; /* Los elementos van uno debajo del otro */
+}
+
+/* Campos de texto y de correo del formulario */
+input[type="text"],
+input[type="email"] {
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ddd; /* Color del borde */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-bottom: 15px; /* Separación entre campos */
+  font-size: 1rem; /* Tamaño del texto dentro del campo */
+}
+
+/* Botón de enviar del formulario */
+input[type="submit"] {
+  background-color: #09f; /* Color del fondo*/
+  color: white; /* Texto blanco */
+  padding: 12px;
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1.1rem;
+  cursor: pointer; /* Mano al pasar el cursor */
+  transition: background-color 0.3s ease; /* Suavidad al cambiar el color */
+}
+
+/* Cuando pasas el ratón sobre el botón de enviar */
+input[type="submit"]:hover {
+  background-color: #0077cc; /* Azul más oscuro al pasar por encima */
+}
+
+/* Estilo para la barra de navegación (<nav>) */
+nav {
+  margin-bottom: 20px; /* Separación hacia abajo */
+}
+
+/* Enlaces dentro del nav */
+nav a {
+  color: #09f; /* Color azul */
+  margin-right: 15px; /* Separación entre enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold;
+}
+
+/* Cuando pasas el ratón por los enlaces del nav */
+nav a:hover {
+  color: #0077cc; /* Azul más oscuro */
+}
+
+/* Imagen (por ejemplo, la del currículum) */
+img {
+  margin-top: 20px; /* Separación hacia arriba */
+  border-radius: 10px; /* Bordes redondeados para que no se vea como un bloque cuadrado */
+}
+
+/* Estilo para listas desordenadas (<ul>) y ordenadas (<ol>) */
+ul,
+ol {
+  margin-left: 20px; /* Separación hacia la derecha para que no estén pegadas al borde */
+}
+  
